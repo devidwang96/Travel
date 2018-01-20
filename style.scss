@@ -1,0 +1,290 @@
+$red: #d03958;
+$brown: #e3d5b8;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+ul {
+  margin-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-brown {
+  background-color: $brown;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.red {
+  color: $red;
+}
+
+.section {
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+  &__form {
+    background-color: $red;
+    border-radius: 5px;
+    padding: 30px 23px;
+    color: #ffffff;
+    .form {
+      &__title {
+        font-size: 22px;
+        margin-bottom: 37px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      &__input {
+        border-radius: 5px;
+        padding: 19px;
+        width: 100%;
+        margin-bottom: 17px;
+        color: #b5b5b5;
+        border: none;
+      }
+      &__checkbox {
+        margin-right: 23px;
+      }
+      &__submit {
+        width: 100%;
+      }
+      label{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.button {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  border-radius: 5px;
+  transition: all .5s;
+  border: none;
+  display: inline-block;
+  &.red {
+    background-color: $red;
+    color: #fff;
+  }
+  &.brown {
+    background-color: $brown;
+    color: #000;
+  }
+  &.black {
+    background-color: #000;
+    color: #fff;
+  }
+  &:hover {
+    background-color: #fff;
+    color: $red;
+  }
+}
+
+.welcome {
+  padding-top: 60px;
+  background: url(img/roadway-1149579_960_720.jpg) top center no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $brown;
+    opacity: 0.8;
+  }
+  &__top {
+    position: relative;
+    z-index: 10;
+  }
+  &__bottom {
+    margin-top: 178px;
+  }
+  &__logo {
+    float: left;
+  }
+  &__menu {
+    float: right;
+    margin-top: 30px;
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 15px;
+        a {
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 15px;
+          border-radius: 5px;
+        }
+        &.active {
+          a {
+            background: $red;
+            color: #fff;
+          }
+
+        }
+      }
+    }
+  }
+  .section {
+    &__title {
+      font-size: 90px;
+      font-weight: 900;
+      line-height: 80px;
+    }
+    &__form {
+      margin-bottom: -60px;
+    }
+  }
+}
+
+.services {
+  padding: 40px 0 70px;
+  &__blocks {
+    text-align: center;
+    .block {
+      &__preview {
+        height: 170px;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.our-story {
+  color: #fff;
+  padding: 40px 0;
+}
+
+.pricing {
+  .section {
+    &__title {
+      text-align: center;
+      margin: 60px 0;
+    }
+  }
+  &__blocks {
+    text-align: center;
+    .block {
+      padding: 35px 15px;
+      background-color: #fff;
+      border-radius: 5px;
+      height: 450px;
+      position: relative;
+      overflow: hidden;
+      &__title {
+        font-size: 22px;
+        margin-bottom: 37px;
+      }
+      &__price {
+        font-size: 60px;
+        font-weight: 700;
+        color: $red;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+      }
+      &__description {
+        margin: 0 auto 34px;
+        max-width: 200px;
+      }
+      &__tag {
+        position: absolute;
+        left: -96px;
+        top: -76px;
+        background-color: #b4a993;
+        padding: 127px 82px 20px;
+        transform: rotate(-45deg);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.gallery {
+  text-align: center;
+  margin-top: 141px;
+  margin-bottom: 120px;
+  .section {
+    &__title {
+      margin-bottom: 63px;
+    }
+  }
+  &__feedbacks {
+    .feedback {
+      position: relative;
+      text-align: left;
+      border-radius: 5px;
+      padding: 26px;
+      padding-right: 130px;
+      &__preview {
+        position: Absolute;
+        width: 105px;
+        height: 105px;
+        right: -53px;
+        top:calc(50% - 52px);
+        img {
+          width: 100%;
+        }
+      }
+      &__name {
+        margin-top: 23px;
+        color: $red;
+      }
+    }
+  }
+  &__images {
+    padding-left: 50px;
+    .image {
+      display: inline-block;
+      margin: 0 20px 28px;
+    }
+  }
+  &__more {
+    margin-top: 46px;
+    a {
+      color: $red;
+    }
+
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  color: #fff;
+}

@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat; }
+
+p {
+  font-size: 20px;
+  font-weight: 400; }
+
+ul {
+  margin-left: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    text-decoration: none;
+    color: #000; }
+
+.bg-red {
+  background-color: #d03958; }
+
+.bg-brown {
+  background-color: #e3d5b8; }
+
+.bg-black {
+  background-color: #000; }
+
+.red {
+  color: #d03958; }
+
+.section__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px; }
+.section__form {
+  background-color: #d03958;
+  border-radius: 5px;
+  padding: 30px 23px;
+  color: #ffffff; }
+  .section__form .form__title {
+    font-size: 22px;
+    margin-bottom: 37px;
+    text-transform: uppercase;
+    text-align: center; }
+  .section__form .form__input {
+    border-radius: 5px;
+    padding: 19px;
+    width: 100%;
+    margin-bottom: 17px;
+    color: #b5b5b5;
+    border: none; }
+  .section__form .form__checkbox {
+    margin-right: 23px; }
+  .section__form .form__submit {
+    width: 100%; }
+  .section__form .form label {
+    margin-bottom: 20px; }
+
+.button {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  border-radius: 5px;
+  transition: all .5s;
+  border: none;
+  display: inline-block; }
+  .button.red {
+    background-color: #d03958;
+    color: #fff; }
+  .button.brown {
+    background-color: #e3d5b8;
+    color: #000; }
+  .button.black {
+    background-color: #000;
+    color: #fff; }
+  .button:hover {
+    background-color: #fff;
+    color: #d03958; }
+
+.welcome {
+  padding-top: 60px;
+  background: url(img/roadway-1149579_960_720.jpg) top center no-repeat;
+  background-size: 100% 100%;
+  position: relative; }
+  .welcome:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e3d5b8;
+    opacity: 0.8; }
+  .welcome__top {
+    position: relative;
+    z-index: 10; }
+  .welcome__bottom {
+    margin-top: 178px; }
+  .welcome__logo {
+    float: left; }
+  .welcome__menu {
+    float: right;
+    margin-top: 30px; }
+    .welcome__menu ul li {
+      display: inline-block;
+      margin-left: 15px; }
+      .welcome__menu ul li a {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 15px;
+        border-radius: 5px; }
+      .welcome__menu ul li.active a {
+        background: #d03958;
+        color: #fff; }
+  .welcome .section__title {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 80px; }
+  .welcome .section__form {
+    margin-bottom: -60px; }
+
+.services {
+  padding: 40px 0 70px; }
+  .services__blocks {
+    text-align: center; }
+    .services__blocks .block__preview {
+      height: 170px; }
+      .services__blocks .block__preview img {
+        max-width: 100%; }
+
+.our-story {
+  color: #fff;
+  padding: 40px 0; }
+
+.pricing .section__title {
+  text-align: center;
+  margin: 60px 0; }
+.pricing__blocks {
+  text-align: center; }
+  .pricing__blocks .block {
+    padding: 35px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 450px;
+    position: relative;
+    overflow: hidden; }
+    .pricing__blocks .block__title {
+      font-size: 22px;
+      margin-bottom: 37px; }
+    .pricing__blocks .block__price {
+      font-size: 60px;
+      font-weight: 700;
+      color: #d03958;
+      text-transform: uppercase;
+      margin-bottom: 29px; }
+    .pricing__blocks .block__description {
+      margin: 0 auto 34px;
+      max-width: 200px; }
+    .pricing__blocks .block__tag {
+      position: absolute;
+      left: -96px;
+      top: -76px;
+      background-color: #b4a993;
+      padding: 127px 82px 20px;
+      transform: rotate(-45deg);
+      font-weight: bold; }
+
+.gallery {
+  text-align: center;
+  margin-top: 141px;
+  margin-bottom: 120px; }
+  .gallery .section__title {
+    margin-bottom: 63px; }
+  .gallery__feedbacks .feedback {
+    position: relative;
+    text-align: left;
+    border-radius: 5px;
+    padding: 26px;
+    padding-right: 130px; }
+    .gallery__feedbacks .feedback__preview {
+      position: Absolute;
+      width: 105px;
+      height: 105px;
+      right: -53px;
+      top: calc(50% - 52px); }
+      .gallery__feedbacks .feedback__preview img {
+        width: 100%; }
+    .gallery__feedbacks .feedback__name {
+      margin-top: 23px;
+      color: #d03958; }
+  .gallery__images {
+    padding-left: 50px; }
+    .gallery__images .image {
+      display: inline-block;
+      margin: 0 20px 28px; }
+  .gallery__more {
+    margin-top: 46px; }
+    .gallery__more a {
+      color: #d03958; }
+
+.footer {
+  padding: 60px 0;
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
